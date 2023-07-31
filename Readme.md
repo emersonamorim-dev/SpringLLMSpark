@@ -3,9 +3,13 @@ Codificação em Java com uso do Framework SpringBoot para desenvolvimento de é
 
 **Pré-requisitos**
 Java 8 ou superior
+
 Maven
+
 Kafka
-Spark
+
+Apache Spark
+
 MongoDB
 
 **Como usar**
