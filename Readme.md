@@ -16,18 +16,23 @@ A aplicação agora está pronta para receber solicitações HTTP.
 
 **Endpoints**
 **POST /ingest**
+
 Este endpoint aceita uma string no corpo da solicitação e a envia para um tópico Kafka.
 
 **POST /processing/start**
+
 Este endpoint inicia o processamento dos dados recebidos do Kafka.
 
 **GET /processing/status**
+
 Este endpoint retorna o status do processamento dos dados.
 
 **POST /storage/store**
+
 Este endpoint armazena os dados processados no MongoDB.
 
 **GET /storage/retrieve**
+
 Este endpoint recupera os dados armazenados do MongoDB.
 
 **Serviços**
@@ -56,12 +61,6 @@ Este é um serviço que produz mensagens para um tópico Kafka. Ele usa a classe
 O método sendMessage(String topic, String message) é usado para enviar uma mensagem para um tópico Kafka específico. Ele usa o método send do KafkaTemplate para enviar a mensagem.
 
 Por favor, note que você precisa configurar o KafkaTemplate e o KafkaListener com as propriedades corretas do Kafka (como o endereço do servidor Kafka) para que eles possam se conectar ao Kafka corretamente. Isso geralmente é feito no arquivo application.properties ou application.yml da sua aplicação Spring Boot.
-
-**Configuração**
-A configuração do Kafka, Spark e MongoDB é definida no arquivo application.properties. Você pode modificar estas propriedades para se adequar ao seu ambiente.
-
-Autor:
-**Emerson Amorim**
 
 **Configuração**
 A configuração do Kafka, Spark e MongoDB é definida no arquivo application.properties. Você pode modificar estas propriedades para se adequar ao seu ambiente.
