@@ -2,6 +2,7 @@
 Codificação em Java com uso do Framework SpringBoot para desenvolvimento de é uma aplicação que cria uma LLM - Large Language Model para elaboração de Modelo de Linguagem Larga para implementação de uma Inteligência Artificial que utiliza Apache Kafka para trabalhar com grande quantidade de dados através de Streaming de Dados e Apache Spark para fazer a parte de lapidação de grande quantidade de dados e serão enviados para o MongoDB para ingestão, processamento e armazenamento de dados.
 
 **Pré-requisitos**
+
 Java 8 ou superior
 
 Maven
@@ -13,6 +14,7 @@ Apache Spark
 MongoDB
 
 **Como usar**
+
 Inicie o seu servidor Kafka, Spark e MongoDB.
 Clone este repositório e navegue até o diretório do projeto.
 Execute o comando mvn spring-boot:run para iniciar a aplicação.
