@@ -36,19 +36,25 @@ Este endpoint armazena os dados processados no MongoDB.
 Este endpoint recupera os dados armazenados do MongoDB.
 
 **Serviços**
-DataIngestionService
+
+**DataIngestionService**
+
 Este serviço é responsável pela ingestão de dados. Ele recebe dados e os envia para um tópico Kafka. Os dados também são salvos no MongoDB.
 
 **DataProcessingService**
+
 Este serviço é responsável pelo processamento de dados. Ele recebe dados do Kafka, processa-os usando o Apache Spark e salva os dados processados no MongoDB.
 
 **DataStorageService**
+
 Este serviço é responsável pelo armazenamento de dados. Ele armazena e recupera dados do MongoDB.
 
 **SparkService**
+
 Este serviço é responsável pela leitura e processamento de dados usando o Apache Spark.
 
 **KafkaConsumerService.java**
+
 Este é um serviço que consome mensagens de um tópico Kafka. Ele usa a anotação @KafkaListener para definir um ouvinte Kafka que escuta mensagens de um tópico específico.
 
 Quando uma mensagem é recebida, o método listen(String message) é chamado. Este método lê a mensagem como um Dataset<Row> usando o Apache Spark e imprime o conteúdo do Dataset.
@@ -56,6 +62,7 @@ Quando uma mensagem é recebida, o método listen(String message) é chamado. Es
 O método sendMessage(String string, String data) parece estar vazio e não está sendo usado.
 
 **KafkaProducerService.java**
+
 Este é um serviço que produz mensagens para um tópico Kafka. Ele usa a classe KafkaTemplate do Spring Kafka para enviar mensagens.
 
 O método sendMessage(String topic, String message) é usado para enviar uma mensagem para um tópico Kafka específico. Ele usa o método send do KafkaTemplate para enviar a mensagem.
@@ -63,6 +70,7 @@ O método sendMessage(String topic, String message) é usado para enviar uma men
 Por favor, note que você precisa configurar o KafkaTemplate e o KafkaListener com as propriedades corretas do Kafka (como o endereço do servidor Kafka) para que eles possam se conectar ao Kafka corretamente. Isso geralmente é feito no arquivo application.properties ou application.yml da sua aplicação Spring Boot.
 
 **Configuração**
+
 A configuração do Kafka, Spark e MongoDB é definida no arquivo application.properties. Você pode modificar estas propriedades para se adequar ao seu ambiente.
 
 Autor:
