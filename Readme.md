@@ -21,6 +21,7 @@ Execute o comando mvn spring-boot:run para iniciar a aplicação.
 A aplicação agora está pronta para receber solicitações HTTP.
 
 **Endpoints**
+
 **POST /ingest**
 
 Este endpoint aceita uma string no corpo da solicitação e a envia para um tópico Kafka.
