@@ -1,5 +1,5 @@
 ## Projeto para SpringLLMSpark 
-Codificação em Java com uso do Framework SpringBoot para desenvolvimento de uma aplicação que cria uma LLM - Large Language Model para elaboração um Modelo de Linguagem Larga para implementação de uma Inteligência Artificial que utiliza Apache Kafka para trabalhar com grande quantidade de dados através de Streaming de Dados e Apache Spark para fazer a parte da lapidação de grande quantidade de dados e serão enviados para o MongoDB para ingestão, processamento e armazenamento de dados.
+Codificação em Java com uso do Framework SpringBoot para desenvolvimento de uma aplicação que cria uma LLM - Large Language Model para elaboração um Modelo de Linguagem Larga para implementação de uma Inteligência Artificial que utiliza Apache Kafka para trabalhar com grande quantidade de dados através de Streaming de Dados e Apache Spark para fazer a parte da lapidação de grande quantidade de dados que serão enviados para o MongoDB para ingestão, processamento e armazenamento de dados.
 
 **Pré-requisitos**
 
